@@ -104,7 +104,6 @@
   }
   
   .stats-body {
-    background: #4a6fae;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease;
@@ -133,6 +132,7 @@
   }
   .sc_15_table{
     margin-bottom: 0;
+    border-collapse: separate;
   }
   .sc_15_table thead{
     background-color: #ffffff0a;
@@ -140,9 +140,23 @@
 .sc_15_table th{
     color: white !important;
     text-transform: capitalize;
+    font-weight: 400;
+    background-color: #4267a5;
 }
 .sc_15_weltext{
     margin-right: 0;
     text-wrap: wrap;
     width: 100%;
+}
+.minWid{
+    width: 12%;
+}
+.sc_15_table td{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.svgIcon{
+    width: 11px;
+    height: 11px;
+    color: rgb(232, 85, 18);
 }
