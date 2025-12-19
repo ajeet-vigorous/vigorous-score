@@ -1,0 +1,128 @@
+.bg-main {
+    height: 100%;
+    width: 100%;
+    min-height: 170px !important;
+    max-height: 170px !important;
+}
+.bg-score-8{
+    background-image: url(../../../public//score-bg8.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scoremain {
+    background-size: 100% 100%;
+    padding: 0;
+    width: 100%;
+    float: left;
+    height: 100%;
+    position: relative;
+    color: #fff;
+    margin: auto;
+}
+.score-footer {
+
+    margin: auto;
+}
+.currunt_score3 {
+    color: #ffff00;
+}
+.batsmanscorecard-8 {
+    padding: 0;
+    margin-bottom: 0px;
+    background: rgba(0,0,0,0.5) !important;
+    font-size: 13px;
+    min-height: 90px;
+}
+
+.comment-area {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    font-size: 15px;
+}
+.comment-box {
+    padding: 0px 0px 0px 8px;
+    text-align: left;
+    background: #00000073;
+}
+
+.batsman-area {
+    display: table;
+    text-align: left;
+    width: 100%;
+}
+.teams-area {
+    padding: 3px;
+    text-align: left;
+    background: #00000073;
+    margin: auto;
+}
+
+.teamtype {
+    display: -webkit-inline-box;
+}
+.team-name3 {
+    padding: 0px 0px 0px 8px;
+    text-align: left;
+    margin: 0;
+    width: 100;
+}
+.batsmanul {
+    display: table;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.bat1name {
+    color: #fff;
+    padding: 0px 3px;
+}
+.score-over-fter {
+    display: table;
+    text-align: left;
+    padding: 0;
+}
+.batsman-name {
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 6px 2px;
+}
+.score-over-fter {
+    display: table;
+    text-align: left;
+    padding: 0;
+}
+.batsman-name {
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 6px 2px;
+}
+.ball2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 1000px;
+    color: #fff !important;
+display: flex;
+}
+.ball4 {
+
+    border-radius: 50px;
+    color: #fff !important;
+    padding: 0 6px;
+}
+.score-over > ul {
+    display: inline-flex;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.sportimg {
+    margin-right: 4px;
+    filter: invert(1);
+    width: 18px;
+}

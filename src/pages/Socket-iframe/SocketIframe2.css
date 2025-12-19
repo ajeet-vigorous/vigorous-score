@@ -1,0 +1,238 @@
+
+ .scroeframe2{
+    background-color: rgb(49, 49, 49);
+    color: white;
+   }
+   .image-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Change color as needed */
+    font-weight: 900; /* Change font weight as needed */
+    font-size: 20px; /* Change font size as needed */
+  }
+  
+  .ball-container{
+    background-color: #12244a;
+  }
+  
+  .zoom-effect {
+    display: inline-block;
+    animation: zoomInOut 2s infinite;
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+  }
+  
+  
+  .polygon{
+    background-color: #ff0000;
+    width: 98%;
+    height: 30px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+  
+  }
+  .polygon2{
+    background-color: #ff0000;
+    width: 98%;
+    height: 25px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+    
+  }
+  
+  .frame-2-images{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .scroeframe2{
+   padding-block: 15px;
+   padding-inline: 10px;
+   background-color: #202529;
+  }
+  
+  .image-container img {
+   width: 100%;
+   height: 100%;
+   display: block;
+  }
+  
+  .image-container {
+   position: relative;
+   width: 40px;
+   height: 40px;
+  }
+  .centered-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #ffffff; 
+   font-weight: 800; 
+   font-size: 16px; 
+  }
+  .batting_state{
+   font-size: 16px;
+   text-transform: uppercase;
+  }
+  .ball-container {
+    background-color: #12244a;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bat_frame2 {
+    font-size: 22px;
+  }
+  
+  
+  .zoom-effect {
+    display: inline-block;
+    animation: zoomInOut 2s infinite;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute; /* Ensure the element is positioned within its parent */
+    bottom: 0; /* Keep the element at the bottom */
+    text-align: center; /* Center the text */
+    width: 100%; /* Make the element span the full width of the container */
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  .polygon{
+   background-color: #ff0000;
+   width: 98%;
+   height: 20px;
+   clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+  font-size: small;
+  }
+  /* .polygon2{
+   background-color: #ff0000;
+   width: 98%;
+   height: 25px;
+   clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+   
+  } */
+  
+  .frame-2-images{
+   width: 25px;
+   height: 25px;
+   margin-right: 10px;
+   border-radius: 100%;
+  }
+  .iframe2_Head{
+   font-size: 10px
+  }
+  .heading_iframe2{
+   padding-left: 15px;
+   padding-block: 0px;
+  }
+  
+  .current_over{
+  font-size: 12px;
+
+  /* padding-top: 15px; */
+  }
+  .iframe2_content{
+   background-color: black;
+   color: white;
+  }
+  
+  .frame2_table {
+   background-color: black;
+  }
+  
+  .frame2_table  tr th {
+   font-size:small;
+  }
+  .firstSection_frame2{
+   padding-block: 5px;
+  }
+  @media screen and  (min-width: 575px) {
+   .iframe2_Head {
+     font-size: 16px !important; 
+   }
+   .zoom-effect {
+     font-size: 30px;
+   }
+   .frame2_table  tr th {
+     font-size:medium;
+   }
+   .current_over{
+     font-size: 20px;
+     font-weight: 600;
+     padding-top: 50px;
+  
+     }
+     .polygon{
+       font-size: medium;
+     }
+   .image-container {
+     width: 60px;
+     height: 60px;
+   }
+   .batting_state{
+     font-size: 20px;
+   }
+   .firstSection_frame2{
+     padding-block: 20px;
+   }
+   .centered-text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #ffffff; 
+     font-weight: 800; 
+     font-size: 20px; 
+   }
+  }
+  @media (min-width: 375px ) and (max-width:574px) {
+   .current_over{
+     font-size: 18px;
+     padding-top: 30px;
+     }
+  
+  }
+  
+  

@@ -1,0 +1,121 @@
+.bg-main5 {
+  height: 100%;
+  width: 100%;
+  background: #252328 !important;
+  min-height: 300px !important;
+}
+.scoremain {
+  justify-content: space-around;
+  padding: 0;
+  text-align: center;
+  padding-inline: 2px;
+}
+.mid-section-5 {
+  padding-inline: 0px !important;
+}
+.mid-section2-5 {
+  padding-inline: 5px !important;
+}
+.teaminmg5 {
+  width: 40px;
+  height: 40px;
+  padding-inline: 0px;
+}
+.toss_message {
+  font-size: 11px;
+  display: block;
+  width: 100%;
+
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.team-name5 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  color: #ff911f;
+}
+.team-message-block {
+  background: #000;
+  padding: 8px;
+  height: 50px;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-message {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  color: #e8ff26;
+}
+
+.overBall2 {
+  border-radius: 50%;
+  background-color: #131e29;
+  color: #9fa3a7;
+  font-size: 10px;
+  font-weight: 700;
+  width: 27px;
+  height: 27px;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe_5_table td,
+th {
+  text-align: start;
+  color: #9fa3a7 !important;
+}
+
+.team-name5 {
+  font-size: 13px;
+}
+
+.team-over5 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #9fa3a7;
+}
+
+.team-score5 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e9d126;
+}
+.team-crr {
+  font-size: 9px;
+  color: #9fa3a7;
+}
+
+@media (min-width: 768px) {
+  .team-name5 {
+    font-size: 18px;
+  }
+
+  .team-over5 {
+    font-size: 15px;
+  }
+
+  .team-score5 {
+    font-size: 18px;
+  }
+  .team-crr {
+    font-size: 12px;
+  }
+  .overBall2 {
+    font-size: 14px;
+
+    width: 30px;
+    height: 30px;
+  }
+  .toss_message {
+    font-size: 13px;
+  }
+}

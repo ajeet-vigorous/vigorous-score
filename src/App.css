@@ -1,0 +1,13 @@
+.floating-button {
+  text-align: center;
+    cursor: pointer;
+  }
+
+  
+  body{
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar {
+  display: none !important;
+}

@@ -1,0 +1,225 @@
+.container {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 5px 1px;
+    overflow: hidden;
+    zoom: 95%;
+}
+
+.scorecard {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 0px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.header .matchDate {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.teamsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+.team:first-child {
+    margin-right: 10px;
+    justify-content: flex-start;
+}
+
+.teamFlag {
+    width: 28px;
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.teamName {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.teamScore {
+    font-weight: 700;
+    margin-left: 8px;
+    color: var(--ball-color);
+}
+
+.teamOver {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-left: 5px;
+}
+
+.ballsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 5px 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background: var(--secondary-color);
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ballWicket {
+    background: var(--highlight-color);
+    /* transform: scale(1.1); */
+}
+
+.ballSix {
+    background: var(--accent-color);
+}
+
+.ballFour {
+    background: var(--dark-success);
+}
+
+.commentary {
+    font-size: 12px;
+    padding: 4px 2px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    margin: 3px 0;
+    text-align: center;
+    width: 100%;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+
+}
+
+.batsmenTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.batsmenTable th {
+    background: var(--secondary-color);
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.batsmenTable td {
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.batsmenTable tr:last-child td {
+    border-bottom: none;
+}
+
+.playerName {
+    text-align: left;
+    font-weight: 600;
+}
+
+.highlight {
+    color: var(--ball-color);
+    font-weight: 700;
+}
+
+.statusBadge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.liveBadge {
+    background: var(--highlight-color);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.strikeRate {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.liveComment {
+    text-align: center;
+    /* height: 70px; */
+    display: flex;
+    justify-content: center;
+    /* width: 25%; */
+    /* background: #00000036; */
+    align-items: center;
+       overflow-x: scroll;
+    text-wrap: nowrap;
+    color: var(--ball-color);
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #1a2a3a;
+    --secondary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #ffffff;
+    --highlight-color: #e74c3c;
+    --success-color: #2ecc71;
+    --dark-success: #27ae60;
+    --ball-color: #8be912;
+    /* --ball-color: #f1c40f; */
+    --card-bg: rgba(26, 42, 58, 0.9);
+}

@@ -1,0 +1,73 @@
+.scorecard {
+  background-color: #001f3f;
+  border-radius: 0.5px;
+  padding: 3px 3px;
+}
+
+.ball {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* Bootstrap info */
+  font-weight: bold;
+  font-size: 10px;
+  display: inline-block;
+  line-height: 25px;
+}
+
+.mainrow {
+  padding: 3px 2px 3px 2px;
+  background-color: #02050f4f !important;
+  width: 100%;
+  margin: auto;
+
+}
+
+.tabletext {
+  color: rgb(247, 247, 247) !important;
+  border-top: 0.1px solid white;
+  /* border-left: 1px solid white; */
+  /* border-right: 1px solid white; */
+}
+.tabletextData {
+  color: rgb(255, 255, 255) !important;
+  border-top: 0.1px solid white;
+  /* border-left: 1px solid white; */
+  /* border-right: 1px solid white; */
+}
+
+.tablehead {
+  border: none !important;
+  border-radius: 0px !important;
+  border: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+table th {
+  border: none !important;
+}
+
+.text-white th {
+  border: none !important;
+}
+
+.col1 {
+  width: 60%;
+}
+
+.col2,
+.col3 {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .col1 {
+    width: 50%;
+  }
+
+  .col2,
+  .col3 {
+    width: 25%;
+  }
+}

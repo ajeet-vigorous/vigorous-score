@@ -1,0 +1,63 @@
+.wbt99-scoremain {
+    background: #20481a;
+    padding: 5px;
+    border-radius: 0;
+    margin: 0px;
+    background-image: url("../../../public/iframe4background.jpg"); /* Adjust the path relative to your public folder */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-score-row-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid #fff;
+    align-items: center;
+    background: #000000c7;
+}
+
+.ball-message {
+    padding: 0px 10px;
+
+    font-size: 14px;
+    color: #fff;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.main-score-row-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000c7;
+}
+.team-name4 {
+    font-size: 14px;
+    color: #FD911E;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    width: 35%;
+    text-align: left;
+    margin-block: 3px;
+}
+.wbt99-runrate {
+    color: #fff;
+}
+.team-score {
+    font-size: 14px;
+    color: #ffff00;
+    font-weight: 700;
+}
+.inner {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 12px;
+}
+.i_frame_4{
+    max-width:  220px;
+}
