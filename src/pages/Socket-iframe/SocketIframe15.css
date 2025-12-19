@@ -1,0 +1,148 @@
+.sc_15_bg{
+    background: #3a61a1;
+}
+.sc__15_header{
+    padding: 10px;
+}
+.sc_15_teamBox{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.sc_15_teamImg{
+    width: 22px;
+    height: 25px;
+}
+.sc_15_teamName{
+    font-size: 13px;
+    color: white;
+}
+.sc_15_teamScore{
+    font-size: 15px;
+    font-weight: 600;
+}
+.sc_15_teamScore span{
+    font-size: 12px;
+    font-weight: normal;
+}
+.sc_15_over{
+
+}
+.sc_15_overBall{
+    border: 1px solid #fff3;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    height: 22px;
+    width: 22px;
+    line-height: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    min-width: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #0003;
+    text-transform: uppercase;
+    box-shadow: unset;
+    background-color: unset;
+    color: white !important;
+}
+.sc_15_ballWrapper{
+    align-items: center;
+    background-color: #3a61a1;
+    border-top: 1px solid #ffffff0d;
+    box-sizing: border-box;
+    color: #ebebeb;
+    display: flex;
+    justify-content: start;
+    overflow-y: auto;
+    padding: 5px 10px;
+    width: 100%;
+}
+.overText{
+    font-size: 12px;
+    color: white;
+    text-transform: capitalize;
+}
+.sc_15_overBall.bg-green{
+    background-color: #eaae54;
+}
+.sc_15_overBall.bg-red{
+    background-color: #b8483c;
+}
+
+.match-stats {
+    max-width: 420px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    position: relative;
+  }
+  
+  .stats-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .stats-header {
+    padding: 8px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .arrow {
+    font-size: 12px;
+    transition: transform 0.3s;
+    color: #ff8c00;
+  }
+  
+  .stats-body {
+    background: #4a6fae;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .stats-head {
+    background: #365f9f;
+    font-weight: 600;
+  }
+  
+  /* OPEN STATE */
+  .stats-toggle:checked + .stats-header + .stats-body {
+    max-height: 500px;
+  }
+  
+  .stats-toggle:checked + .stats-header .arrow {
+    transform: rotate(180deg);
+  }
+  .sc_15_table{
+    margin-bottom: 0;
+  }
+  .sc_15_table thead{
+    background-color: #ffffff0a;
+}
+.sc_15_table th{
+    color: white !important;
+    text-transform: capitalize;
+}
+.sc_15_weltext{
+    margin-right: 0;
+    text-wrap: wrap;
+    width: 100%;
+}

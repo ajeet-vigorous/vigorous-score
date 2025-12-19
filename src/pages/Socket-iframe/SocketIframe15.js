@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import "./SocketIframe1.css";
+import "./SocketIframe15.css";
 import { useMatchDetails } from "../../middleware/useMatchDetails";
 import { useEffect, useState } from "react";
 import { GiClick } from "react-icons/gi";
@@ -34,26 +34,41 @@ function SocketIframe15() {
   return (
     <>
       {errorMessage ? <div>{errorMessage}</div>
-        : <div className={`i_frame_1 `}>
-          <div className="text-center">
-            <div className="header d-flex">
-              <div className="over px-1">
-                {Array.from({ length: displayBalls }).map((_, i) => (
-                  <div
-                    key={i}
-                    className={`overBall text-light ${getBackgroundColorClass(
-                      matchScoreDetails?.score?.balls_array[i]
-                    )}`}
-                  >
-                    <span>
-                      {i < totalBalls
-                        ? matchScoreDetails?.score?.balls_array[i]
-                        : "-"}
-                    </span>
+        : <div className={`i_frame_1 sc_15_bg `}>
+
+          <div className="row justify-content-space-between w-100 m-auto sc__15_header">
+            <div className="col-4 px-0 sc_15_teamBox">
+              <div className="row gap-2 align-items-center mx-0">
+                <div className="col-auto px-0">
+                  {matchScoreDetails?.score?.team1_img ? (
+                      <img className="sc_15_teamImg"
+                        src={matchScoreDetails?.score?.team1_img}
+                        alt="team1"
+                      />
+                    ) : null}
+                </div>
+                <div className="col px-0">
+                  <div className="team-name sc_15_teamName">
+                    {matchScoreDetails?.score?.team1_name}
                   </div>
-                ))}
+
+                <div className="score sc_15_teamScore">
+                  {matchScoreDetails?.score?.team1_score
+                    ? matchScoreDetails?.score?.team1_score
+                    : "0-0"}{" "}
+                    <span>
+                        (
+                        {matchScoreDetails?.score?.team1_over
+                          ? matchScoreDetails?.score?.team1_over
+                          : "0"}
+                        )
+                    </span>
+                </div>
+                </div>
               </div>
-              <div className="welTxt d-flex justify-content-between ">
+            </div>
+            <div className="col-4 d-flex justify-content-center px-0">
+              <div className="welTxt sc_15_weltext d-flex justify-content-center ">
               {console.log(matchScoreDetails, "ssss")
               }
                 <div>
@@ -61,7 +76,7 @@ function SocketIframe15() {
                     ? matchScoreDetails?.score?.cb
                     : "Welcome"}{" "}
                 </div>
-                <div>
+                {/* <div>
                   {isMuted ? (
                     <IoVolumeMuteOutline
                       style={{
@@ -79,83 +94,78 @@ function SocketIframe15() {
                       onClick={handleVolumeToggle}
                     />
                   )}
-                </div>
+                </div> */}
               </div>
             </div>
-            <div className="subheader">
-              {matchScoreDetails?.score?.toss
-                ? matchScoreDetails?.score?.toss
-                : "WELCOME"}
-            </div>
-          </div>
-          <div className="d-flex justify-content-space-between w-100 m-auto">
-            <div className="col-sm-6 col-6 px-1">
-              <div className="teamNameBox">
-                <div className="teamBox">
-                  <div className="flagimg">
-                    {matchScoreDetails?.score?.team1_img ? (
-                      <img
-                        src={matchScoreDetails?.score?.team1_img}
-                        alt="team1"
-                      />
-                    ) : null}
+            <div className="col-4 px-0">
+              <div className="row gap-2 align-items-center mx-0">
+                <div className="col px-0">
+                  <div className="team-name sc_15_teamName d-flex justify-content-end">
+                    {matchScoreDetails?.score?.team2_name}
                   </div>
-
-                  <div className="team-name">
-                    {matchScoreDetails?.score?.team1_name}
+                  <div className="score sc_15_teamScore d-flex justify-content-end">
+                      {matchScoreDetails?.score?.team2_score
+                        ? matchScoreDetails?.score?.team2_score
+                        : "0-0"}{" "}
+                          <span>
+                          (
+                          {matchScoreDetails?.score?.team2_over
+                            ? matchScoreDetails?.score?.team2_over
+                            : "0"}
+                          )
+                      </span>
                   </div>
                 </div>
-                <div className="score">
-                  {matchScoreDetails?.score?.team1_score
-                    ? matchScoreDetails?.score?.team1_score
-                    : "0-0"}{" "}
-                  (
-                  {matchScoreDetails?.score?.team1_over
-                    ? matchScoreDetails?.score?.team1_over
-                    : "0"}
-                  )
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-6  px-1 text-right">
-              <div className="teamNameBox">
-                <div className="teamBox">
-                  {matchScoreDetails?.score?.team2_img ? (
-                    <img src={matchScoreDetails?.score?.team2_img} alt="team2" />
+                <div className="col-auto px-0">
+                    {matchScoreDetails?.score?.team2_img ? (
+                    <img className="sc_15_teamImg" src={matchScoreDetails?.score?.team2_img} alt="team2" />
                   ) : null}
-                  <div className="team-name">
-                    {matchScoreDetails?.score?.team2_name
-                      ? matchScoreDetails?.score?.team2_name
-                      : "-"}
-                  </div>
-                </div>
-                <div className="score">
-                  {matchScoreDetails?.score?.team2_score
-                    ? matchScoreDetails?.score?.team2_score
-                    : "0-0"}{" "}
-                  (
-                  {matchScoreDetails?.score?.team2_over
-                    ? matchScoreDetails?.score?.team2_over
-                    : "0"}
-                  )
                 </div>
               </div>
             </div>
           </div>
-          <div className="table-container">
-            <table>
-              <thead>
-                <tr>
-                  <th>Player</th>
-                  <th>Runs</th>
-                  <th>Ball</th>
-                  <th>4s</th>
-                  <th>6s</th>
-                  <th>SR</th>
-                </tr>
-              </thead>
-              <tbody className="tData">
-                <tr>
+
+          <div className="col-12 sc_15_ballWrapper">
+            <div className="overText" >Over</div>
+              <div className="over px-1 sc_15_over">
+                  {Array.from({ length: displayBalls }).map((_, i) => (
+                    <div
+                      key={i}
+                      className={`overBall sc_15_overBall text-light ${getBackgroundColorClass(
+                        matchScoreDetails?.score?.balls_array[i]
+                      )}`}
+                    >
+                      <span>
+                        {i < totalBalls
+                          ? matchScoreDetails?.score?.balls_array[i]
+                          : "-"}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+            </div>
+            <div className="col-12">
+              <div class="match-stats">
+                <input type="checkbox" id="statsToggle" class="stats-toggle" />
+                <label for="statsToggle" className="stats-header">
+                  Match Statistics
+                  <span className="arrow">▲</span>
+                </label>
+
+                <div className="stats-body">
+                  <table className="sc_15_table">
+                    <thead>
+                      <tr className="text-white">
+                        <th>Batsmen</th>
+                        <th>R</th>
+                        <th>B</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>SR</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
                   <td>
                     <div style={{ display: "flex", gap: "5px", alignItems: "center" }}>
                       <div className="">
@@ -241,76 +251,63 @@ function SocketIframe15() {
                       : "-"}
                   </td>
                 </tr>
-              </tbody>
-            </table>
+                    </tbody>
+                  </table>
 
-          </div>
-          <div className="table-container">
-            <table>
-              <thead>
-                <tr>
-                  <th>Bowler</th>
-                  <th>Over</th>
-                  <th>run</th>
-                  <th>Wicket</th>
-                  <th>Economy</th>
-
-                </tr>
-              </thead>
-              <tbody className="tData">
-                <tr>
-                  <td>
-                    <div style={{ display: "flex", gap: "5px", alignItems: "center" }}>
-                      <div className="">
-                        {matchScoreDetails?.score?.bowlerArray?.img ? (
-                          <img
-                            src={matchScoreDetails?.score?.bowlerArray?.img}
-                            alt="team1"
-                            style={{ width: "25px", height: "25px", borderRadius: "1000px" }}
-                          />
-                        ) : null}
-                      </div>
-                      {matchScoreDetails?.score?.bowlerArray?.name
-                        ? matchScoreDetails?.score?.bowlerArray?.name
-                        : "-"}
-                    </div>
-                  </td>
-                  <td>
-                    {matchScoreDetails?.score?.bowlerArray?.over
-                      ? matchScoreDetails?.score?.bowlerArray?.over
-                      : "-"}
-                  </td>
-                  <td>
-                    {matchScoreDetails?.score?.bowlerArray?.run
-                      ? matchScoreDetails?.score?.bowlerArray?.run
-                      : "-"}
-                  </td>
-                  <td>
-                    {matchScoreDetails?.score?.bowlerArray?.wicket
-                      ? matchScoreDetails?.score?.bowlerArray?.wicket
-                      : "-"}
-                  </td>
-                  <td>
-                    {matchScoreDetails?.score?.bowlerArray?.economy
-                      ? matchScoreDetails?.score?.bowlerArray?.economy
-                      : "-"}
-                  </td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="footer d-flex w-100 justify-content-between px-2">
-            {/* <button  onClick={()=>setModal(true)}>session</button> */}
-            <div style={{ width: "70%" }} className=" text-start">
-              CRR :{" "}
-              {matchScoreDetails?.score?.run_rate &&
-                matchScoreDetails?.score?.run_rate}
+                  <table className="sc_15_table">
+                    <thead>
+                      <tr className="text-white">
+                        <th>Bowler</th>
+                        <th>Over</th>
+                        <th>Run</th>
+                        <th>Wicket</th>
+                        <th>Economy</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div style={{ display: "flex", gap: "5px", alignItems: "center" }}>
+                            <div className="">
+                              {matchScoreDetails?.score?.bowlerArray?.img ? (
+                                <img
+                                  src={matchScoreDetails?.score?.bowlerArray?.img}
+                                  alt="team1"
+                                  style={{ width: "25px", height: "25px", borderRadius: "1000px" }}
+                                />
+                              ) : null}
+                            </div>
+                            {matchScoreDetails?.score?.bowlerArray?.name
+                              ? matchScoreDetails?.score?.bowlerArray?.name
+                              : "-"}
+                          </div>
+                        </td>
+                        <td>
+                          {matchScoreDetails?.score?.bowlerArray?.over
+                            ? matchScoreDetails?.score?.bowlerArray?.over
+                            : "-"}
+                        </td>
+                        <td>
+                          {matchScoreDetails?.score?.bowlerArray?.run
+                            ? matchScoreDetails?.score?.bowlerArray?.run
+                            : "-"}
+                        </td>
+                        <td>
+                          {matchScoreDetails?.score?.bowlerArray?.wicket
+                            ? matchScoreDetails?.score?.bowlerArray?.wicket
+                            : "-"}
+                        </td>
+                        <td>
+                          {matchScoreDetails?.score?.bowlerArray?.economy
+                            ? matchScoreDetails?.score?.bowlerArray?.economy
+                            : "-"}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-            {/* <div style={{width:"30%"}} className=" text-end"> 
-    P'ship : {matchScoreDetails?.score?.partnership ? matchScoreDetails?.score?.partnership : `0(0)`} 
-  </div> */}
-          </div>
         </div>}
     </>
   );
