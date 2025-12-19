@@ -73,7 +73,7 @@
 }
 
 .match-stats {
-    max-width: 420px;
+    /* max-width: 420px; */
     font-family: Arial, sans-serif;
     color: #fff;
     position: relative;
