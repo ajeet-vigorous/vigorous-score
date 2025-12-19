@@ -104,7 +104,7 @@ function SocketIframe15() {
                   <div className="team-name sc_15_teamName d-flex justify-content-end">
                     {matchScoreDetails?.score?.team2_name}
                   </div>
-                  <div className="score sc_15_teamScore d-flex justify-content-end">
+                  <div className="score sc_15_teamScore d-flex justify-content-end align-items-center">
                       {matchScoreDetails?.score?.team2_score
                         ? matchScoreDetails?.score?.team2_score
                         : "0-0"}{" "}
@@ -158,11 +158,11 @@ function SocketIframe15() {
                     <thead>
                       <tr className="text-white">
                         <th>Batsmen</th>
-                        <th>R</th>
-                        <th>B</th>
-                        <th>4s</th>
-                        <th>6s</th>
-                        <th>SR</th>
+                        <th className="text-center">R</th>
+                        <th className="text-center">B</th>
+                        <th className="text-center">4s</th>
+                        <th className="text-center">6s</th>
+                        <th className="text-center">SR</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -214,27 +214,27 @@ function SocketIframe15() {
                         : "-"}
                     </div>
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player1_array?.run
                       ? matchScoreDetails?.score?.player1_array?.run
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player1_array?.ball
                       ? matchScoreDetails?.score?.player1_array?.ball
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player1_array?.fours
                       ? matchScoreDetails?.score?.player1_array?.fours
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player1_array?.sixes
                       ? matchScoreDetails?.score?.player1_array?.sixes
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player1_array?.strike_rate
                       ? matchScoreDetails?.score?.player1_array?.strike_rate
                       : "-"}
@@ -283,27 +283,27 @@ function SocketIframe15() {
                         : "-"}
                     </div>
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player2_array?.run
                       ? matchScoreDetails?.score?.player2_array?.run
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player2_array?.ball
                       ? matchScoreDetails?.score?.player2_array?.ball
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player2_array?.fours
                       ? matchScoreDetails?.score?.player2_array?.fours
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player2_array?.sixes
                       ? matchScoreDetails?.score?.player2_array?.sixes
                       : "-"}
                   </td>
-                  <td>
+                  <td className="text-center">
                     {matchScoreDetails?.score?.player2_array?.strike_rate
                       ? matchScoreDetails?.score?.player2_array?.strike_rate
                       : "-"}
@@ -363,22 +363,22 @@ function SocketIframe15() {
                               : "-"}
                           </div>
                         </td>
-                        <td>
+                        <td className="text-center">
                           {matchScoreDetails?.score?.bowlerArray?.over
                             ? matchScoreDetails?.score?.bowlerArray?.over
                             : "-"}
                         </td>
-                        <td>
+                        <td className="text-center">
                           {matchScoreDetails?.score?.bowlerArray?.run
                             ? matchScoreDetails?.score?.bowlerArray?.run
                             : "-"}
                         </td>
-                        <td>
+                        <td className="text-center">
                           {matchScoreDetails?.score?.bowlerArray?.wicket
                             ? matchScoreDetails?.score?.bowlerArray?.wicket
                             : "-"}
                         </td>
-                        <td>
+                        <td className="text-center">
                           {matchScoreDetails?.score?.bowlerArray?.economy
                             ? matchScoreDetails?.score?.bowlerArray?.economy
                             : "-"}
