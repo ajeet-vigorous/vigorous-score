@@ -54,8 +54,7 @@ function SocketIframe1() {
                 ))}
               </div>
               <div className="welTxt d-flex justify-content-between ">
-              {console.log(matchScoreDetails, "ssss")
-              }
+            
                 <div>
                   {matchScoreDetails?.score?.cb
                     ? matchScoreDetails?.score?.cb

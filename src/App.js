@@ -17,6 +17,10 @@ import SocketIframe12 from './pages/Socket-iframe/SocketIframe12';
 import SocketIframe13 from './pages/Socket-iframe/SocketIframe13';
 import SocketIframe14 from './pages/Socket-iframe/SocketIframe14';
 import SocketIframe15 from './pages/Socket-iframe/SocketIframe15';
+import SocketIframe16 from './pages/Socket-iframe/SocketIframe16';
+import SocketIframe17 from './pages/Socket-iframe/SocketIframe17';
+import SocketIframe18 from './pages/Socket-iframe/SocketIframe18';
+import SocketIframe19 from './pages/Socket-iframe/SocketIframe19';
 
 function App() {
   return (
@@ -39,6 +43,11 @@ function App() {
         <Route path='/socket-iframe-13/:crex?/:eventId?' element={<SocketIframe13 />} />
         <Route path='/socket-iframe-14/:crex?/:eventId?' element={<SocketIframe14 />} />
         <Route path='/socket-iframe-15/:crex?/:eventId?' element={<SocketIframe15 />} />
+        {/* <Route path='/socket-iframe-16/:crex?/:eventId?' element={<SocketIframe16 />} /> */}
+        <Route path='/socket-iframe-17/:crex?/:eventId?' element={<SocketIframe17 />} />
+        <Route path='/socket-iframe-18/:crex?/:eventId?' element={<SocketIframe18 />} />
+        <Route path='/socket-iframe-19/:crex?/:eventId?' element={<SocketIframe19 />} />
+
       </Routes>
       </BrowserRouter>
     </div>
